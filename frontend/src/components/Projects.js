@@ -20,6 +20,9 @@ const Projects = () => {
 
     return (
         <div style={{height: '100vh', backgroundColor: 'yellow'}} id="projects">
+            <div style={{paddingTop: '72px'}}>
+                <h1>My Projects</h1>
+            </div>
             {projects.projects.map(project=>(
                 <h1>Project Name: {project.name}</h1>
             ))}
