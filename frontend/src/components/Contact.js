@@ -10,10 +10,10 @@ const Contact = () => {
                 <h1>Contact Me</h1>
             </div>
             <div style={{textAlign: 'center', paddingLeft: '40%'}}>
-                <div style={{float: 'left'}}>
+                <div style={{float: 'left'}} onClick={()=>window.open("mailto:isaacgc0596@gmail.com?subject=Hello!")}>
                 <MailOutlineOutlinedIcon style={{fontSize: '72px', paddingRight: '8px', paddingLeft: '8px'}}/>
                 </div>
-                <div style={{float: 'left'}}>
+                <div style={{float: 'left'}} onClick={()=>window.open("https://www.linkedin.com/in/isaac-c0/")}>
                 <LinkedInIcon style={{fontSize: '72px', paddingRight: '8px', paddingLeft: '8px'}}/>
                 </div>
                 <div style={{float: 'left'}} >

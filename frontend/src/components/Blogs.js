@@ -18,7 +18,10 @@ const Blogs = () => {
     }
 
     return (
-        <div style={{height: '100vh', backgroundColor: 'green'}} id="blogs">
+        <div style={{height: '100vh', backgroundColor: 'green', textAlign: 'center'}} id="blogs">
+            <div style={{paddingTop: '72px'}}>
+                <h1>My Blogs</h1>
+            </div>
             {blogs.blogs.map(blog=>(
                 <h1>Blog Name: {blog.name}</h1>
             ))}
