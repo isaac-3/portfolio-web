@@ -16,7 +16,7 @@ const Contact = () => {
                 <div style={{float: 'left'}} onClick={()=>window.open("https://www.linkedin.com/in/isaac-c0/")}>
                 <LinkedInIcon style={{fontSize: '72px', paddingRight: '8px', paddingLeft: '8px'}}/>
                 </div>
-                <div style={{float: 'left'}} >
+                <div style={{float: 'left'}} onClick={()=>window.open("https://github.com/isaac-3")}>
                 <GitHubIcon style={{fontSize: '56px', paddingBottom: "11px", paddingRight: '8px', paddingLeft: '8px'}}/>
                 </div>
             </div>
