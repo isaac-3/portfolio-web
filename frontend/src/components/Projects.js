@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState, useEffect} from 'react'
+import ProjCard from './ProjCard'
 
 const Projects = () => {
 
@@ -23,9 +24,11 @@ const Projects = () => {
             <div style={{paddingTop: '72px'}}>
                 <h1>My Projects</h1>
             </div>
+            <div style={{width: 'fit-content', marginLeft:'auto',marginRight:'auto',}}>
             {projects.projects.map(project=>(
-                <h1>Project Name: {project.name}</h1>
+                <ProjCard project={project}/>
             ))}
+            </div>
         </div>
     );
 }
