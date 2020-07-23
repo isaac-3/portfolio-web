@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState, useEffect} from 'react'
+import BlogCard from './BlogCard';
 
 const Blogs = () => {
 
@@ -23,7 +24,9 @@ const Blogs = () => {
                 <h1>My Blogs</h1>
             </div>
             {blogs.blogs.map(blog=>(
-                <h1>Blog Name: {blog.name}</h1>
+                <div style={{width: 'fit-content', marginLeft:'auto',marginRight:'auto', padding: '8px'}}>
+                    <BlogCard blog={blog}/>
+                </div>
             ))}
         </div>
     );
