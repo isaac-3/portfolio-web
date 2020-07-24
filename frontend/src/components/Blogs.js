@@ -23,11 +23,11 @@ const Blogs = () => {
             <div style={{paddingTop: '72px'}}>
                 <h1>My Blogs</h1>
             </div>
-            {blogs.blogs.map(blog=>(
-                <div style={{width: 'fit-content', marginLeft:'auto',marginRight:'auto', padding: '8px'}}>
+            <div style={{width: 'fit-content', marginLeft:'auto',marginRight:'auto'}}>
+                {blogs.blogs.map(blog=>(
                     <BlogCard blog={blog}/>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 }
