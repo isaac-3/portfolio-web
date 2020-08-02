@@ -10,7 +10,7 @@ const BlogCard = (props) => {
             showGraphic={true}
             maxLine={2}
             minLine={1}
-            url="https://medium.com/"
+            url={props.blog.blog_url}
             />
         </div>
     );

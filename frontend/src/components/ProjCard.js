@@ -24,17 +24,17 @@ export default function ImgMediaCard(props) {
   console.log(props.project.project_url)
   return (
       <div style={{padding: '8px', float: 'left'}}>
+        {/* <h1>{props.project.name}</h1> */}
           <ReactTinyLink
           width='30vw'
           cardSize="large"
           showGraphic={true}
-          maxLine={2}
-          minLine={1}
-          // url={props.project.project_url}
-          url="https://youtube.com/"
+          maxLine={0}
+          minLine={0}
+          url={props.project.project_url}
           />
-          <div>
-            <small>{props.project.name}</small><span>{props.project.name}</span>
+          <div style={{backgroundColor: 'white'}}>
+            <small style={{float: 'right'}}>{props.project.name}</small><span>{props.project.name}</span>
           </div>
       </div>
     // <Card className={classes.root}>
