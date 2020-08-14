@@ -37,7 +37,7 @@
 .wavy span {
   position: relative;
   display: inline-block;
-  color: #fff;
+  color: blue;
   font-size: 2em;
   text-transform: uppercase;
   animation: animate 1s ease-in-out infinite;

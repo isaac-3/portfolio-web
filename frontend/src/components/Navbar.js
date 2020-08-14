@@ -63,7 +63,7 @@ export default function Navbar() {
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button style={{color: 'white'}}>
+                <Button style={{color: 'rgb(36, 153, 191)'}}>
                 Blogs
                 </Button>
             </Link>

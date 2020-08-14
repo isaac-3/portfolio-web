@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div style={{height: '100vh', backgroundColor: 'rgb(105, 105, 105)', textAlign: 'center'}} id="about">
+        <div style={{height: '100vh', textAlign: 'center'}} id="about">
             <div style={{paddingTop: '72px'}}>
             <div className='wavy'>
               <span style={{isolation: 1}}>I</span>

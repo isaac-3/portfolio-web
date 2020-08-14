@@ -19,7 +19,7 @@ const Blogs = () => {
     }
 
     return (
-        <div style={{height: '100vh', backgroundColor: 'rgb(105, 105, 105)', textAlign: 'center'}} id="blogs">
+        <div style={{height: '100vh', textAlign: 'center'}} id="blogs">
             <div style={{paddingTop: '72px'}}>
                 <h1>My Blogs</h1>
             </div>

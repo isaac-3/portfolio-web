@@ -9,7 +9,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Blogs from './components/Blogs';
 import Contact from './components/Contact'
-
+import Skills from './components/Skills'
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
       <Projects/>
       <Blogs/>
       <Contact/>
+      <Skills/>
       {/* <BrowserRouter>
         <Navbar/>
         <Switch>

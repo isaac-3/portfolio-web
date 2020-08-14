@@ -20,7 +20,7 @@ const Projects = () => {
     // console.log(projects.projects)
 
     return (
-        <div style={{height: '100vh', backgroundColor: 'rgb(105, 105, 105)', textAlign: 'center'}} id="projects">
+        <div style={{height: '100vh', textAlign: 'center'}} id="projects">
             <div style={{paddingTop: '72px'}}>
                 <h1>My Projects</h1>
             </div>
