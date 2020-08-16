@@ -18,24 +18,41 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    marginLeft: '25%'
   },
 }));
 
 export default function Navbar() {
   const classes = useStyles();
 
+  const navSlide = () => {
+    const burger = document.querySelector('.burger')
+    const nav = document.querySelector('.nav-links')
+    const navLinks = document.querySelectorAll('.nav-links li')
+
+    nav.classList.toggle('nav-active')
+    navLinks.forEach((link, index) => {
+      if(link.style.animation){
+        link.style.animation = ''
+      }else{
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .5}s`
+      }
+    })
+    burger.classList.toggle('toggle')
+  }
+
   return (
     <div className={classes.root}>
       <AppBar position="fixed" style={{backgroundColor: 'rgb(44, 48, 54)'}}>
         <Toolbar className="navbar">
-          {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton> */}
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h6" className={classes.title} className='name-title'>
             Isaac Chavez
           </Typography>
-          <Link
+            <div className='nav-links'>
+              <li>
+            <Link
             activeClass="active"
+            // className='nav-links'
             to="about"
             spy={true}
             smooth={true}
@@ -45,8 +62,11 @@ export default function Navbar() {
                 About
                 </Button>
             </Link>
+            </li>
+            <li>
             <Link
             activeClass="active"
+            // className='nav-links'
             to="projects"
             spy={true}
             smooth={true}
@@ -56,8 +76,11 @@ export default function Navbar() {
                 Projects
                 </Button>
             </Link>
+            </li>
+            <li>
             <Link
             activeClass="active"
+            // className='nav-links'
             to="blogs"
             spy={true}
             smooth={true}
@@ -67,8 +90,11 @@ export default function Navbar() {
                 Blogs
                 </Button>
             </Link>
+            </li>
+            <li>
             <Link
             activeClass="active"
+            // className='nav-links'
             to="contact"
             spy={true}
             smooth={true}
@@ -78,6 +104,30 @@ export default function Navbar() {
                 Contact
                 </Button>
             </Link>
+            </li>
+            <li>
+            <Link
+            // className='nav-links'
+            activeClass="active"
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration= {500}>
+                <Button style={{color: 'white'}}>
+                Skills
+                </Button>
+            </Link>
+            </li>
+            </div>
+            {/* <IconButton edge="start" className='burger' color="inherit" aria-label="menu">
+            <MenuIcon />
+          </IconButton> */}
+        <div className='burger' onClick={() => navSlide()}>
+          <div className='line1'></div>
+          <div className='line2'></div>
+          <div className='line3'></div>
+        </div>
         </Toolbar>
       </AppBar>
     </div>
