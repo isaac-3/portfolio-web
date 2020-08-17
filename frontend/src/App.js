@@ -19,8 +19,8 @@ function App() {
       <About/>
       <Projects/>
       <Blogs/>
-      <Contact/>
       <Skills/>
+      <Contact/>
       {/* <BrowserRouter>
         <Navbar/>
         <Switch>
