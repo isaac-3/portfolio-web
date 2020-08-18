@@ -1,3 +1,9 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
 .top {
   text-align: center;
   background-color: rgb(50, 55, 64);
@@ -87,6 +93,131 @@
 .txt-type > .txt {
   border-right: 0.2rem solid #fff;
 }
+
+.contact-sec{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-form{
+  width: 350px;
+  height: auto;
+  text-align: center;
+}
+
+.form-title{
+  text-align: center;
+  /* padding: 25px 0; */
+}
+
+.label{
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+  color: black;
+  /* padding: 8px 0; */
+}
+
+::-webkit-input-placeholder { text-align:center; }
+
+.input{
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  appearance:none;
+  -webkit-appearance:none;
+}
+
+.red, input{
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: transparent;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.contact-form{
+  color: #babecc;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+#message-box{
+  height: 220px;
+  width: 100%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-left: 15px;
+  border-radius: 8px;
+  border: none;
+  overflow: hidden;
+  resize: none;
+  font-size: 16px;
+  text-align: center;
+  background-color: transparent;
+  outline:0px !important;
+  appearance:none;
+  -webkit-appearance:none;
+}
+
+
+.input:focus{
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+.red{
+  /* color: #55ff0d; */
+  color: #2ec950;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  width: 50%;
+}
+
+.red:hover{
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+
+.red:active{
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+.contact-icon{
+  margin-top: 24px;
+}
+
+#email-icon, #linkedin-icon, #github-icon, #phone-icon{
+  cursor: pointer;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 4px;
+}
+#email-icon:hover, #linkedin-icon:hover, #github-icon:hover, #phone-icon:hover{
+  box-shadow: -2px -2px 5px #babecc, 2px 2px 5px #babecc;
+}
+#email-icon:hover{
+  color: #D44638;
+}
+#linkedin-icon:hover{
+  color: #0e76a8;
+}
+#phone-icon:hover{
+  color: green;
+}
+
+#email-icon:active, #linkedin-icon:active, #github-icon:active, #phone-icon:active{
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
 /* .name-title{
   display: flex;
   font-size: 3.4em;
