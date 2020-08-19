@@ -5,24 +5,24 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 const Contact = () => {
     return (
-        <div className="contact-sec" style={{height: '100vh', textAlign: 'center', backgroundColor: '#ebecf0'}} id="contact">
+        <div className="contact-sec" style={{height: '100vh', textAlign: 'center'}} id="contact">
             {/* <div style={{paddingTop: '72px'}}>
             </div> */}
-            <div style={{textAlign: 'left'}}>
+            <div style={{textAlign: 'left',paddingTop: '72px', marginBottom: '24px' }}>
                 <h1>Contact Me</h1>
-                <div className="contact-icon">
+                <div className="contact-icon-email">
                     <i class="fa fa-envelope-o" id='email-icon' onClick={()=>window.open("mailto:isaacgc0596@gmail.com?subject=Hello!")} style={{fontSize:"36px"}}></i>
-                    <span style={{marginLeft: "8px"}}>isaacgc0596@gmail.com</span><br/>
+                    <span className='email-span' style={{marginLeft: "8px"}}>isaacgc0596@gmail.com</span><br/>
                 </div>
-                <div className="contact-icon">
-                    <i class="fa fa-phone" id="phone-icon" style={{fontSize:"36px"}}></i>
+                <div className="contact-icon-phone">
+                    <i class="fa fa-phone" id="phone-icon" onClick={()=> window.open('tel:2819355556')} style={{fontSize:"36px"}}></i>
                     <span style={{marginLeft: "8px"}}>(281) 935-5556</span>
                 </div>
-                <div className="contact-icon">
+                <div className="contact-icon-linkedin">
                     <i class="fa fa-linkedin-square" id='linkedin-icon' onClick={()=>window.open("https://www.linkedin.com/in/isaac-c0/")} style={{fontSize:"36px"}}></i>
                     <span style={{marginLeft: "8px"}}>Connect With Me</span><br/>
                 </div>
-                <div className="contact-icon">
+                <div className="contact-icon-github">
                     <i class="fa fa-github" id='github-icon' onClick={()=>window.open("https://github.com/isaac-3")} style={{fontSize:"36px"}}></i>
                     <span style={{marginLeft: "8px"}}>GitHub Profile</span>
                 </div>

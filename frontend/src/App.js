@@ -14,7 +14,7 @@ import Skills from './components/Skills'
 
 function App() {
   return (
-    <div >
+    <div style={{backgroundColor: '#ebecf0'}}>
       <Navbar/>
       <About/>
       <Projects/>

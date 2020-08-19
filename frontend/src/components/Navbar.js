@@ -107,7 +107,7 @@ function init() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="fixed" style={{backgroundColor: 'rgb(44, 48, 54)'}}>
+      <AppBar position="fixed" style={{backgroundColor: '#091921'}}>
         <Toolbar className="navbar">
           <Typography variant="h6" className={classes.title} className='name-title'>
             <span className='txt-type' data-wait="3000" data-words='["Isaac Chavez"]'></span>
@@ -123,7 +123,7 @@ function init() {
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button style={{color: 'white'}}>
+                <Button disableRipple='true' className='nav-btns' style={{color: '#babecc'}}>
                 About
                 </Button>
             </Link>
@@ -137,7 +137,7 @@ function init() {
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button style={{color: 'white'}}>
+                <Button disableRipple='true' className='nav-btns' style={{color: '#babecc'}}>
                 Projects
                 </Button>
             </Link>
@@ -151,7 +151,7 @@ function init() {
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button style={{color: 'rgb(36, 153, 191)'}}>
+                <Button disableRipple='true' className='nav-btns' style={{color: '#babecc'}}>
                 Blogs
                 </Button>
             </Link>
@@ -165,7 +165,7 @@ function init() {
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button style={{color: 'white'}}>
+                <Button disableRipple='true' className='nav-btns' style={{color: '#babecc'}}>
                 Skills
                 </Button>
             </Link>
@@ -179,7 +179,7 @@ function init() {
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button style={{color: 'white'}}>
+                <Button disableRipple='true' className='nav-btns' style={{color: '#babecc'}}>
                 Contact
                 </Button>
             </Link>

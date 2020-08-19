@@ -14,9 +14,19 @@
   justify-content: space-around;
 }
 
-.navbar > .active {
-  border-bottom: 1px solid white;
-  /* color: red; */
+.navbar li> .active {
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -50px);
+  height: 55px;
+  width: fit-content;
+  background: #091921;
+  padding-top: 3px;
+  padding-bottom: 6px;
+  border-radius: 25%;
+  box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
+              inset 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .nav-links{
@@ -26,6 +36,14 @@
 
 .nav-links li{
   list-style: none;
+  padding: 0px 4px;
+}
+
+.nav-links .nav-btns{
+  /* background: #091921; */
+  border-radius: 25%;
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+              2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .burger {
@@ -43,6 +61,7 @@
 
 @media screen and (max-width: 768px){
   body{
+    background-color: #ebecf0;
     overflow-x: hidden;
   }
   .nav-links {
@@ -50,7 +69,7 @@
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: rgb(50, 55, 64);
+    background-color: #091921;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,6 +79,24 @@
   }
   .nav-links li {
     opacity: 0;
+  }
+  #email-icon{
+    color: #D44638;
+  }
+  #linkedin-icon{
+    color: #0e76a8;
+  }
+  #github-icon{
+    color: #211F1F;
+  }
+  #phone-icon{
+    color: green;
+  }
+  #skills{
+    height: 100%;
+  }
+  #contact{
+    height: 100%;
   }
   .burger{
     display: block;
@@ -107,8 +144,9 @@
   text-align: center;
 }
 
-.form-title{
+.form-title h1{
   text-align: center;
+  color: black;
   /* padding: 25px 0; */
 }
 
@@ -207,11 +245,26 @@
 #email-icon:hover{
   color: #D44638;
 }
+.contact-icon-email:hover span{
+  text-decoration: underline #D44638 ;
+}
 #linkedin-icon:hover{
   color: #0e76a8;
 }
+.contact-icon-linkedin:hover span{
+  text-decoration: underline #0e76a8 ;
+}
+#github-icon:hover{
+  color: #211F1F;
+}
+.contact-icon-github:hover span{
+  text-decoration: underline #211F1F ;
+}
 #phone-icon:hover{
   color: green;
+}
+.contact-icon-phone:hover span{
+  text-decoration: underline green ;
 }
 
 #email-icon:active, #linkedin-icon:active, #github-icon:active, #phone-icon:active{
@@ -260,8 +313,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
 
   /* align-content: center; */
 }
@@ -271,6 +324,38 @@
   margin-bottom: 48px;
   flex: 0 0 25%
 }
+
+.skill-box i:hover, svg:hover{
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(2px 2px 5px #545453);
+  -moz-filter: drop-shadow(2px 2px 5px #545453);
+  filter: drop-shadow(2px 2px 5px #545453);
+}
+
+/* .skill-box i:not(:hover){
+  color: grey;
+}
+
+.redux-icon:not(:hover){
+  fill: grey;
+} */
+
+.svg-redux:hover .redux-icon{
+  fill: #764abc;
+}
+
+/* .sql-icon:not(:hover){
+  fill: grey;
+} */
+
+.svg-sql:hover .sql-icon{
+  fill: black;
+}
+
+
+/* .skill-box i:hover, svg:hover{
+  color: red;
+} */
 
 /* .title-span{
   color: #ff022c;
