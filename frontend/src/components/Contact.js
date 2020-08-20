@@ -5,7 +5,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 const Contact = () => {
     return (
-        <div className="contact-sec" style={{height: '100vh', textAlign: 'center'}} id="contact">
+        <div className="contact-sec" style={{textAlign: 'center'}} id="contact">
             {/* <div style={{paddingTop: '72px'}}>
             </div> */}
             <div style={{textAlign: 'left',paddingTop: '72px', marginBottom: '24px' }}>

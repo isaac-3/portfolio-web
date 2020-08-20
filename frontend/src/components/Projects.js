@@ -17,17 +17,16 @@ const Projects = () => {
     if (projects == undefined){
         return <h1>loading</h1>
     }
-    // console.log(projects.projects)
 
     return (
-        <div style={{height: '100vh', textAlign: 'center'}} id="projects">
+        <div style={{textAlign: 'center'}} id="projects">
             <div style={{paddingTop: '72px'}}>
                 <h1>My Projects</h1>
             </div>
-            <div style={{width: 'fit-content', marginLeft:'auto',marginRight:'auto',}}>
+            <div className='proj-cont'>
             {projects.projects.map(project=>(
                 <ProjCard project={project}/>
-            ))}
+            ))} 
             </div>
         </div>
     );

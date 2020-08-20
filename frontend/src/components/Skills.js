@@ -11,13 +11,13 @@ const Skills = () => {
             icon.style.transform = `translateX(${x}px) translateY(${y}px)`
         })
     }
-
+    // onMouseMove={(e) => paralax(e)}
     return (
-        <div style={{height: '100vh', textAlign: 'center'}} id="skills">
+        <div style={{textAlign: 'center'}} id="skills">
             <div style={{paddingTop: '72px'}}>
                 <h1>My Skills:</h1>
             </div>
-            <div className='skill-box' onMouseMove={(e) => paralax(e)}>
+            <div className='skill-box' >
                 <i class="devicon-javascript-plain colored" data-speed='-5' style={{fontSize: '100px'}}></i>
                 <i class="devicon-react-original-wordmark colored" data-speed='5' style={{fontSize: '100px'}}></i>
                 <i class="devicon-html5-plain-wordmark colored" data-speed='2' style={{fontSize: '100px'}}></i>

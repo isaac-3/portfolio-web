@@ -9,61 +9,36 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { ReactTinyLink } from 'react-tiny-link'
 
+export default function ProjCard(props) {
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-    float: 'left',
-    textAlign: 'center',
-    margin: '8px'
-  },
-});
+  let projimg = props.project.name === 'Take A Trip' ? '/takeatrip.png' : props.project.name === 'Shoptastic' ? '/shoptastic.png' : props.project.name === 'Chrello' ? '/chrello.png' : null
 
-export default function ImgMediaCard(props) {
-  const classes = useStyles();
+  const projSlide = (e) => {
+    const proj = e.currentTarget
+    proj.classList.toggle('expanded')
+  }
+  
   return (
-      // <div style={{padding: '8px', float: 'left'}}>
-      //     <ReactTinyLink
-      //     width='30vw'
-      //     cardSize="large"
-      //     showGraphic={true}
-      //     maxLine={0}
-      //     minLine={0}
-      //     url={props.project.project_url}
-      //     />
-      //     <div style={{backgroundColor: 'white'}}>
-      //       <small style={{float: 'right'}}>{props.project.name}</small><span>{props.project.name}</span>
-      //     </div>
-      // </div>
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt={props.project.name}
-          height="140"
-          image="https://pix10.agoda.net/hotelImages/124/1246280/1246280_16061017110043391702.jpg?s=1024x768"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {props.project.name}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-          Users are able to plan trips out by searching for various things to do around their location, and may also add other users to join in on the trip to plan out more ideas
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      {/* <CardActions textAlign='center'> */}
-          <div style={{textAlign: 'center'}}>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
+    <div className='proj-card' onClick={(e) => projSlide(e)}>
+      <img className='proj-img' src={projimg} height='200px' width='200px'/>
+      <div className='text1'>
+        <div className='proj-content'>
+        <strong><small className='proj-title'>{props.project.name}</small></strong>
+          <div className='proj-text'>
+            Users are able to plan trips out by searching for various things to do around their location, and may also add other users to join in on the trip to plan out more ideas
+            <div className='proj-btns'>
+            <button className='demo-link' onClick={()=>window.open(props.project.project_url)}><i className='fa fa-youtube-play'></i>Demo</button>
+            <button className='code-link' onClick={()=>window.open(props.project.code_url)}><i class="fa fa-github"></i>Code</button>
+            </div>
+          </div>
         </div>
-      {/* </CardActions> */}
-    </Card>
+      </div>
+      <div style={{display: 'flex'}}>
+      <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+      </div>
+ 
+    </div>
+    
   );
 }
 

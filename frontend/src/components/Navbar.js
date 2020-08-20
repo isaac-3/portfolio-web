@@ -107,7 +107,7 @@ function init() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="fixed" style={{backgroundColor: '#091921'}}>
+      <AppBar position="fixed" style={{backgroundColor: '#314455'}}>
         <Toolbar className="navbar">
           <Typography variant="h6" className={classes.title} className='name-title'>
             <span className='txt-type' data-wait="3000" data-words='["Isaac Chavez"]'></span>

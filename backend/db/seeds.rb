@@ -4,9 +4,9 @@ Blog.destroy_all
 
 u1 = User.create({username: 'one', password: '123', name: 'name'})
 
-Project.create({name: "Take A Trip", user_id: u1.id, project_url: 'https://www.youtube.com/watch?v=adlCActjmRc&feature=youtu.be'})
-Project.create({name: "Shoptastic", user_id: u1.id, project_url: 'https://www.youtube.com/watch?v=QG8HfCflFWM&feature=youtu.be'})
-Project.create({name: "Chrello", user_id: u1.id, project_url: 'https://www.youtube.com/watch?v=jqrZRoTbMS8'})
+Project.create({name: "Take A Trip", user_id: u1.id,code_url: 'https://github.com/isaac-3/final-project',project_url: 'https://www.youtube.com/watch?v=adlCActjmRc&feature=youtu.be'})
+Project.create({name: "Shoptastic", user_id: u1.id,code_url: 'https://github.com/isaac-3/Shop-Mod4-React-Project',project_url: 'https://www.youtube.com/watch?v=QG8HfCflFWM&feature=youtu.be'})
+Project.create({name: "Chrello", user_id: u1.id,code_url: 'https://github.com/bryantomoregie/Project-3-',project_url: 'https://www.youtube.com/watch?v=jqrZRoTbMS8'})
 
 Blog.create({name: 'Improve Your Typing', user_id: u1.id, blog_url: 'https://medium.com/@isaacgc0596/improve-your-typing-48f7e795e1ef'})
 Blog.create({name: 'Event Listeners', user_id: u1.id, blog_url: 'https://medium.com/@isaacgc0596/event-listeners-878a0d6fe101'})
