@@ -23,7 +23,7 @@ const Blogs = () => {
             <div style={{paddingTop: '72px'}}>
                 <h1>My Blogs</h1>
             </div>
-            <div style={{width: 'fit-content', marginLeft:'auto',marginRight:'auto'}}>
+            <div className='blog-cont'>
                 {blogs.blogs.map(blog=>(
                     <BlogCard blog={blog}/>
                 ))}

@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2020_07_14_044135) do
     t.integer "user_id"
     t.string "project_url"
     t.string "code_url"
+    t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

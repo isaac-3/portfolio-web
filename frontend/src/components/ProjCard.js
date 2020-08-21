@@ -25,7 +25,7 @@ export default function ProjCard(props) {
         <div className='proj-content'>
         <strong><small className='proj-title'>{props.project.name}</small></strong>
           <div className='proj-text'>
-            Users are able to plan trips out by searching for various things to do around their location, and may also add other users to join in on the trip to plan out more ideas
+            {props.project.description}
             <div className='proj-btns'>
             <button className='demo-link' onClick={()=>window.open(props.project.project_url)}><i className='fa fa-youtube-play'></i>Demo</button>
             <button className='code-link' onClick={()=>window.open(props.project.code_url)}><i class="fa fa-github"></i>Code</button>

@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { red } from '@material-ui/core/colors';
 import { Link, animateScroll as scroll } from "react-scroll";
+import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,6 +20,10 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
     marginLeft: '25%'
+  },
+  large: {
+    width: theme.spacing(7),
+    height: theme.spacing(7),
   },
 }));
 
@@ -109,9 +114,9 @@ function init() {
     <div className={classes.root}>
       <AppBar position="fixed" style={{backgroundColor: '#314455'}}>
         <Toolbar className="navbar">
+        <Avatar alt="Remy Sharp" src="/profile.jpg" className={classes.large}/>
           <Typography variant="h6" className={classes.title} className='name-title'>
-            <span className='txt-type' data-wait="3000" data-words='["Isaac Chavez"]'></span>
-            {/* Isaac Chavez */}
+            {/* <span className='txt-type' data-wait="3000" data-words='["Isaac Chavez"]'></span> */}
           </Typography>
             <div className='nav-links'>
               <li>
