@@ -467,7 +467,9 @@
   justify-content: center;
 }
 
-
+#noo:hover{
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
 /* .name-title{
   display: flex;
   font-size: 3.4em;

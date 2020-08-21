@@ -114,10 +114,10 @@ function init() {
     <div className={classes.root}>
       <AppBar position="fixed" style={{backgroundColor: '#314455'}}>
         <Toolbar className="navbar">
-        <Avatar alt="Remy Sharp" src="/profile.jpg" className={classes.large}/>
-          <Typography variant="h6" className={classes.title} className='name-title'>
+        <Avatar alt="Remy Sharp" src="/profile.jpg" className={classes.large} id='noo'/>
+          {/* <Typography variant="h6" className={classes.title} className='name-title'> */}
             {/* <span className='txt-type' data-wait="3000" data-words='["Isaac Chavez"]'></span> */}
-          </Typography>
+          {/* </Typography> */}
             <div className='nav-links'>
               <li>
             <Link
