@@ -9,6 +9,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { red } from '@material-ui/core/colors';
 import { Link, animateScroll as scroll } from "react-scroll";
 import Avatar from '@material-ui/core/Avatar';
+import { deepOrange, deepPurple } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,6 +26,11 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(7),
     height: theme.spacing(7),
   },
+  orange: {
+    color: '#babecc',
+    backgroundColor: '#091921',
+    // backgroundColor: 'red',
+  }
 }));
 
 export default function Navbar() {
@@ -114,7 +120,10 @@ function init() {
     <div className={classes.root}>
       <AppBar position="fixed" style={{backgroundColor: '#314455'}}>
         <Toolbar className="navbar">
-        <Avatar alt="Remy Sharp" src="/profile.jpg" className={classes.large} id='noo'/>
+        <div className='acard cmiddle'>
+          <Avatar alt="Remy Sharp" src="/profile.jpg" id='avatar-front'/>
+          <Avatar className={classes.orange} id='avatar-back'><i class="fa fa-code" id='dev-back'></i></Avatar>
+        </div>
           {/* <Typography variant="h6" className={classes.title} className='name-title'> */}
             {/* <span className='txt-type' data-wait="3000" data-words='["Isaac Chavez"]'></span> */}
           {/* </Typography> */}
@@ -128,7 +137,7 @@ function init() {
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button disableRipple='true' className='nav-btns' style={{color: '#babecc'}}>
+                <Button disableRipple='true' activeClass="green" className='nav-btns' style={{color: '#babecc'}}>
                 About
                 </Button>
             </Link>
@@ -147,7 +156,7 @@ function init() {
                 </Button>
             </Link>
             </li>
-            <li>
+            {/* <li>
             <Link
             activeClass="active"
             // className='nav-links'
@@ -160,7 +169,7 @@ function init() {
                 Blogs
                 </Button>
             </Link>
-            </li>
+            </li> */}
             <li>
             <Link
             // className='nav-links'

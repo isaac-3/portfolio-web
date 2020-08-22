@@ -22,8 +22,8 @@
   height: 55px;
   width: fit-content;
   /* background: #314455; */
-  padding-top: 3px;
-  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-bottom: 9px;
   border-radius: 25%;
   box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.2),
               inset 2px 2px 6px rgba(0, 0, 0, 0.5);
@@ -64,12 +64,20 @@
 @media screen and (min-width: 768px){
   #projects{
     height: 100vh;
-    /* display: block; */
-    /* overflow: auto; */
   }
   #skills{
     height: 100vh;
   }
+  #blogs{
+    height: 100vh;
+  }
+  .acard:hover > #avatar-front{
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  .acard:hover > #avatar-back{
+    transform: perspective(600px) rotateY(0deg);
+  }
+
 }
 
 @media screen and (max-width: 768px){
@@ -466,10 +474,47 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.cmiddle{
+  transform: translate(-50%, -50%);
+  margin-bottom: 48px;
+}
+#avatar-front, #avatar-back{
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: .6s linear;
+}
+#avatar-front{
+  transform: perspective(600px) rotateY(0deg);
+}
+#avatar-back{
+  transform: perspective(600px) rotateY(180deg);
+}
 
-#noo:hover{
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 48px;
+  background-color: #314455;
+  /* border-top-left-radius: 15%;
+  border-top-right-radius: 15%; */
+
+}
+
+.footer-sec{
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+}
+
+/* .avatar:hover{
   box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
 }
+.avatar-back{
+  color: green
+} */
 /* .name-title{
   display: flex;
   font-size: 3.4em;
@@ -524,8 +569,13 @@
   flex: 0 0 25%
 }
 
-.skill-box i:hover, svg:hover{
-  /* border-radius: 50%; */
+.skill-box svg:hover{
+  -webkit-filter: drop-shadow(2px 2px 5px #545453);
+  -moz-filter: drop-shadow(2px 2px 5px #545453);
+  filter: drop-shadow(2px 2px 5px #545453);
+}
+
+.skill-box i:hover{
   -webkit-filter: drop-shadow(2px 2px 5px #545453);
   -moz-filter: drop-shadow(2px 2px 5px #545453);
   filter: drop-shadow(2px 2px 5px #545453);

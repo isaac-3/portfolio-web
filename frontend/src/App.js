@@ -11,6 +11,7 @@ import Projects from './components/Projects';
 import Blogs from './components/Blogs';
 import Contact from './components/Contact'
 import Skills from './components/Skills'
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
       <Navbar/>
       <About/>
       <Projects/>
-      <Blogs/>
+      {/* <Blogs/> */}
       <Skills/>
       <Contact/>
+      <Footer/>
       {/* <BrowserRouter>
         <Navbar/>
         <Switch>

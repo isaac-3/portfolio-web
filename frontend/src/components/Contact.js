@@ -22,10 +22,6 @@ const Contact = () => {
                     <i class="fa fa-linkedin-square" id='linkedin-icon' onClick={()=>window.open("https://www.linkedin.com/in/isaac-c0/")} style={{fontSize:"36px"}}></i>
                     <span style={{marginLeft: "8px"}}>Connect With Me</span><br/>
                 </div>
-                <div className="contact-icon-github">
-                    <i class="fa fa-github" id='github-icon' onClick={()=>window.open("https://github.com/isaac-3")} style={{fontSize:"36px"}}></i>
-                    <span style={{marginLeft: "8px"}}>GitHub Profile</span>
-                </div>
             </div>
             <div className="contact-form">
                 <div className="form-title">
