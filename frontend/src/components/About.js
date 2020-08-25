@@ -65,26 +65,17 @@ const About = () => {
         new TypeWriter(txtElement, words, wait);
       }
     return (
-        <div style={{height: '100vh', textAlign: 'center'}} id="about">
-            <div style={{paddingTop: '72px'}}>
-                <div className='wavy'>
-                    <span style={{isolation: 1}}>I</span>
-                    <span style={{isolation: 2}}>S</span>
-                    <span style={{isolation: 3}}>A</span>
-                    <span style={{isolation: 4}}>A</span>
-                    <span style={{isolation: 5}}>C</span>
-
-                    <span style={{isolation: 6}}>C</span>
-                    <span style={{isolation: 7}}>H</span>
-                    <span style={{isolation: 8}}>A</span>
-                    <span style={{isolation: 9}}>V</span>
-                    <span style={{isolation: 10}}>E</span>
-                    <span style={{isolation: 11}}>Z</span>
+        <div style={{textAlign: 'center', backgroundColor: 'inherit'}} id="about">
+            <div className='about-me-cont'>
+                <div className='about-me-name'>
+                    <h1>Hi my name is isaac Chavaez and i am a</h1>
+                    <span className='txt-type' data-wait="3000" data-words='["software engineer", "life long learner", "creater"]'></span>
                 </div>
-                <span className='txt-type' data-wait="3000" data-words='["Isaac Chavez"]'></span>
-
-                <h1>About Me</h1>
-                <h3>My Names Isaac and I have passion for software development</h3>
+                <div class="vl"></div>
+                <div className='about-me-read'>
+                    <h3>I have always had an interest in programming and everything that comes with it, having worked and experimented with a couple of languages, I have been captivated by it, in terms of what you may do with it in both front/back end, and how it can evolve in the future. Being able to see what goes on behind the scenes of different technologies intrigues me and makes me want to examine how it all works together. Working and trying out different methods on how things interact with each other is something I enjoy, it pushes me to broaden my mind and find different answers. In my previous experience, working with others, I have appreciated the strength of teamwork and have been able to gain the ability to see the whole picture in regards to people, places, and needs without compromising details. Knowing that software development is a never-ending road of learning, I am excited and motivated not only to continue but to embrace the journey ahead.
+                    </h3>
+                </div>
             </div>
         </div>
     );

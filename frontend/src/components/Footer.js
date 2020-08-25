@@ -4,11 +4,14 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='footer-sec'>
-                <i class="fa fa-github" onClick={()=>window.open("https://github.com/isaac-3")} style={{fontSize:"36px"}}></i>
-                <img src='/medd.svg'style={{height:"36px"}}/>
+                <i class="fa fa-github" id='footer-github'onClick={()=>window.open("https://github.com/isaac-3")}></i>
+                {/* <img className='footer-medium' src='/medd.svg'/> */}
+                <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" className='footer-medium'>    <path d="M 3 6 L 7 11.091797 L 7 35.285156 L 1 43 L 15 43 L 9 35.285156 L 9 13.75 L 22 43 L 21.998047 43.013672 L 34 13.544922 L 34 39 L 30 43 L 47 43 L 43 39 L 42.972656 10.503906 L 46.863281 6.0136719 L 34.845703 6.0136719 L 25.605469 28.744141 L 15.496094 6 L 3 6 z"/></svg>
+                <i class="fa fa-linkedin-square" id='footer-linkedin' onClick={()=>window.open("https://www.linkedin.com/in/isaac-c0/")}></i>
+                <i className='fa fa-youtube-play' id='footer-yt'></i>
             </div>
             <div>
-                <h4>Isaac Chavez © 2020</h4>
+                <h4 style={{color:'white'}}>Isaac Chavez © 2020</h4>
             </div>
             
         </div>
