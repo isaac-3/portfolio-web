@@ -5,10 +5,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 const Contact = () => {
     return (
-        <div className="contact-sec" style={{textAlign: 'center'}} id="contact">
-            {/* <div style={{paddingTop: '72px'}}>
-            </div> */}
-            <div style={{textAlign: 'left',paddingTop: '72px', marginBottom: '24px' }}>
+        <div className="contact-sec" style={{textAlign: 'center'}} id='contact'>
+            <div className='contact-links'>
                 <h1>Contact Me</h1>
                 <div className="contact-icon-email">
                     <i class="fa fa-envelope-o" id='email-icon' onClick={()=>window.open("mailto:isaacgc0596@gmail.com?subject=Hello!")} style={{fontSize:"36px"}}></i>
@@ -21,6 +19,11 @@ const Contact = () => {
                 <div className="contact-icon-linkedin">
                     <i class="fa fa-linkedin-square" id='linkedin-icon' onClick={()=>window.open("https://www.linkedin.com/in/isaac-c0/")} style={{fontSize:"36px"}}></i>
                     <span style={{marginLeft: "8px"}}>Connect With Me</span><br/>
+                </div>
+                <h1>My Resume</h1>
+                <div className="resume-section">
+                    <i class="fa fa-file-o" id='resume'onClick={()=>window.open("/resume.pdf")} style={{fontSize: '30px'}}></i>
+                    <a style={{marginLeft:'8px'}} href='/resume.pdf' target="_blank">View My Resume</a>
                 </div>
             </div>
             <div className="contact-form">

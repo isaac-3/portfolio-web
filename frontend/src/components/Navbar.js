@@ -115,10 +115,10 @@ function init() {
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
-
+// 314455
   return (
     <div className={classes.root}>
-      <AppBar position="fixed" style={{backgroundColor: '#314455'}}>
+      <AppBar position="fixed" style={{backgroundColor: '#022140'}}>
         <Toolbar className="navbar">
         <div className='acard cmiddle'>
           <Avatar alt="Remy Sharp" src="/profile.jpg" id='avatar-front'/>
@@ -137,7 +137,7 @@ function init() {
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button disableRipple='true' activeClass="green" className='nav-btns' style={{color: '#babecc'}}>
+                <Button disableRipple='true' className='nav-btns'>
                 About
                 </Button>
             </Link>
@@ -151,7 +151,7 @@ function init() {
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button disableRipple='true' className='nav-btns' style={{color: '#babecc'}}>
+                <Button disableRipple='true' className='nav-btns'>
                 Projects
                 </Button>
             </Link>
@@ -172,14 +172,13 @@ function init() {
             </li> */}
             <li>
             <Link
-            // className='nav-links'
             activeClass="active"
             to="skills"
             spy={true}
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button disableRipple='true' className='nav-btns' style={{color: '#babecc'}}>
+                <Button disableRipple='true' className='nav-btns'>
                 Skills
                 </Button>
             </Link>
@@ -187,13 +186,12 @@ function init() {
             <li>
             <Link
             activeClass="active"
-            // className='nav-links'
             to="contact"
             spy={true}
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button disableRipple='true' className='nav-btns' style={{color: '#babecc'}}>
+                <Button disableRipple='true' className='nav-btns'>
                 Contact
                 </Button>
             </Link>

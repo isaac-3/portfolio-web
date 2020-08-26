@@ -1,8 +1,9 @@
-/* * {
-  margin: 0;
+* {
+  
+  /* margin: 0;
   padding: 0;
-  box-sizing: border-box;
-} */
+  box-sizing: border-box; */
+}
 
 .top {
   text-align: center;
@@ -21,12 +22,21 @@
   transform: translate(-50px, -50px);
   height: 55px;
   width: fit-content;
-  /* background: #314455; */
   padding-top: 6px;
   padding-bottom: 9px;
   border-radius: 25%;
   box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.2),
               inset 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+.navbar li> .active .nav-btns{
+  color: #51bef5;
+  text-shadow: 0 0 4px #4fd3ff;
+}
+
+.navbar .nav-btns{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  color: #babecc;
 }
 
 .nav-links{
@@ -65,6 +75,9 @@
   #projects{
     height: 100vh;
   }
+  #contact{
+    height: 100vh;
+  }
   #skills{
     height: 100vh;
   }
@@ -100,9 +113,7 @@
   .vl{
     display: none;
   }
-  #about{
-    /* height: 100vh; */
-  }
+  
   .about-me-cont{
     flex-direction: column;
   }
@@ -135,8 +146,8 @@
   #linkedin-icon{
     color: #0e76a8;
   }
-  #github-icon{
-    color: #211F1F;
+  #resume{
+    color: #ED2224;
   }
   #phone-icon{
     color: green;
@@ -190,12 +201,14 @@
 }
 
 .contact-sec{
-  /* height: 100vh; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 24px;
+}
+.contact-sec h1{
+  font-family: 'Poppins', sans-serif;
 }
 
 .contact-form{
@@ -215,7 +228,7 @@
   margin-bottom: 24px;
   width: 100%;
   color: black;
-  /* padding: 8px 0; */
+  font-family: 'Poppins', sans-serif;
 }
 
 ::-webkit-input-placeholder { text-align:center; }
@@ -228,6 +241,7 @@
   text-align: center;
   appearance:none;
   -webkit-appearance:none;
+  font-family: 'Advent Pro', sans-serif;
 }
 
 .red, input{
@@ -270,7 +284,7 @@
 
 .red{
   color: #05b7f2;
-  /* color: #0b346e; */
+  font-family: 'Advent Pro', sans-serif;
   font-weight: bold;
   box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
   transition: all 0.2s ease-in-out;
@@ -291,7 +305,7 @@
   margin-top: 24px;
 } */
 
-#email-icon, #linkedin-icon, #github-icon, #phone-icon{
+#email-icon, #linkedin-icon, #phone-icon, #resume{
   cursor: pointer;
   box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
   transition: all 0.2s ease-in-out;
@@ -299,11 +313,19 @@
   border-radius: 50%;
   padding: 4px;
 }
-#email-icon:hover, #linkedin-icon:hover, #github-icon:hover, #phone-icon:hover{
+#email-icon:hover, #linkedin-icon:hover, #phone-icon:hover, #resume:hover{
   box-shadow: -2px -2px 5px #babecc, 2px 2px 5px #babecc;
 }
 #email-icon:hover{
   color: #D44638;
+}
+.contact-links{
+  text-align: left;
+  padding-top: 72px;
+  margin-bottom: 24px;
+}
+.contact-links span, a{
+  font-family: 'Poppins', sans-serif;
 }
 .contact-icon-email:hover span{
   text-decoration: underline #D44638 ;
@@ -314,21 +336,34 @@
 .contact-icon-linkedin:hover span{
   text-decoration: underline #0e76a8 ;
 }
-#github-icon:hover{
+/* #github-icon:hover{
   color: #211F1F;
 }
 .contact-icon-github:hover span{
   text-decoration: underline #211F1F ;
-}
+} */
 #phone-icon:hover{
   color: green;
 }
 .contact-icon-phone:hover span{
   text-decoration: underline green ;
 }
+.resume-section a{
+  color: black;
+}
+#resume:hover{
+  color: #ED2224; 
+}
+.resume-section:hover a{
+  text-decoration: underline #ED2224 ;
+}
 
-#email-icon:active, #linkedin-icon:active, #github-icon:active, #phone-icon:active{
+#email-icon:active, #linkedin-icon:active, #resume:active, #phone-icon:active{
   box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+.proj-header{
+  padding-top: 72px;
+  font-family: 'Poppins', sans-serif;
 }
 .proj-cont{
   display: flex;
@@ -401,14 +436,13 @@
 }
 
 .proj-title {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 900;
-
-  /* padding-bottom: 40px; */
-  /* margin: 20px 0 12px; */
   font-size: 20px;
 }
 .proj-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
   padding: 0 10px;
 }
 
@@ -417,6 +451,8 @@
   flex-wrap: wrap;
 }
 .proj-btns button{
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 900;
   flex-grow: 1;
 }
 @keyframes sheen {
@@ -524,7 +560,8 @@
   justify-content: space-around;
   width: 100%;
   /* height: 48px; */
-  background-color: #0A122A;
+  /* background-color: #0A122A; */
+  background-color: #091921;
 }
 
 .footer-sec{
@@ -546,7 +583,7 @@
   transition: all 0.5s ease;
 }
 .footer-sec svg{
-  margin: 8px 4px 0 4px;
+  margin: 8px 4px 4px 4px;
   height: 24px;
   cursor: pointer;
   border-radius: 50%;
@@ -627,6 +664,11 @@
   }
 } */
 
+.skills-header{
+  padding-top: 72px;
+  font-family: 'Poppins', sans-serif;
+}
+
 .skill-box{
   display: flex;
   flex-wrap: wrap;
@@ -686,6 +728,8 @@
 .about-me-name{
   /* flex-grow: 1; */
   /* width: 45%; */
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -694,6 +738,7 @@
 .about-me-read{
   /* flex-grow: 1; */
   /* width: 45%; */
+  
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -702,12 +747,24 @@
 .txt-type{
   font-size: 36px;
 }
+.txt-type > .txt {
+  border-right: 0.2rem solid rgba(0, 0, 0.8);
+  animation: blinkTextCursor 800ms steps(40) infinite normal;
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255,255,255 .8);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
 .vl {
   margin-top: 116px;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  border-left: 6px solid black;
+  border-left: 6px solid #022140;
   height: 500px;
   
 }
@@ -739,3 +796,32 @@
     transform: rotate(360deg);
   }
 } */
+
+.wavy {
+  position: relative;
+  -webkit-box-reflect: below -12px linear-gradient(
+    transparent rgba(0,0,0,0.2));
+}
+
+.wavy span {
+  /* position: relative; */
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  padding-top: 8px;
+  /* text-transform: uppercase; */
+  animation: animate 1.5s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--co));
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-15px);
+  }
+  40%, 100% {
+    transform: translateY(0px);
+  }
+}

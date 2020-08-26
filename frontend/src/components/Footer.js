@@ -11,7 +11,23 @@ const Footer = () => {
                 <i className='fa fa-youtube-play' id='footer-yt'></i>
             </div>
             <div>
-                <h4 style={{color:'white'}}>Isaac Chavez © 2020</h4>
+            <div className='wavy'>
+                    <span style={{'--co': 1}}>i</span>
+                    <span style={{'--co': 2}}>s</span>
+                    <span style={{'--co': 3}}>a</span>
+                    <span style={{'--co': 4}}>a</span>
+                    <span style={{'--co': 5}}>c</span>
+                    <span style={{'--co': 6}}>&nbsp;</span>
+                    <span style={{'--co': 7}}>c</span>
+                    <span style={{'--co': 8}}>h</span>
+                    <span style={{'--co': 9}}>a</span>
+                    <span style={{'--co': 10}}>v</span>
+                    <span style={{'--co': 11}}>e</span>
+                    <span style={{'--co': 12}}>z</span>
+                    <span style={{'--co': 13}}>&nbsp;</span>
+                    <span style={{'--co': 14}}>©</span>
+                </div>
+                {/* <h4 style={{color:'white'}}>Isaac Chavez © 2020</h4> */}
             </div>
             
         </div>

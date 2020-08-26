@@ -68,8 +68,8 @@ const About = () => {
         <div style={{textAlign: 'center', backgroundColor: 'inherit'}} id="about">
             <div className='about-me-cont'>
                 <div className='about-me-name'>
-                    <h1>Hi my name is isaac Chavaez and i am a</h1>
-                    <span className='txt-type' data-wait="3000" data-words='["software engineer", "life long learner", "creater"]'></span>
+                    <h1>hi my name is isaac chavez and i am a . . .</h1>
+                    <span className='txt-type' data-wait="3000" data-words='["software engineer", "Life Long Learner", "Developer"]'></span>
                 </div>
                 <div class="vl"></div>
                 <div className='about-me-read'>

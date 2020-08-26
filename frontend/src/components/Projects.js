@@ -20,7 +20,7 @@ const Projects = () => {
 
     return (
         <div style={{textAlign: 'center'}} id="projects">
-            <div style={{paddingTop: '72px'}}>
+            <div className='proj-header'>
                 <h1>My Projects</h1>
             </div>
             <div className='proj-cont'>

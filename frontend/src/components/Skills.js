@@ -14,7 +14,7 @@ const Skills = () => {
     // onMouseMove={(e) => paralax(e)}
     return (
         <div style={{textAlign: 'center'}} id="skills">
-            <div style={{paddingTop: '72px'}}>
+            <div className='skills-header'>
                 <h1>My Skills:</h1>
             </div>
             <div className='skill-box' >

@@ -27,8 +27,8 @@ export default function ProjCard(props) {
           <div className='proj-text'>
             {props.project.description}
             <div className='proj-btns'>
-            <button className='demo-link' onClick={()=>window.open(props.project.project_url)}><i className='fa fa-youtube-play'></i>Demo</button>
-            <button className='code-link' onClick={()=>window.open(props.project.code_url)}><i class="fa fa-github"></i>Code</button>
+            <button className='demo-link' onClick={()=>window.open(props.project.project_url)}><i className='fa fa-youtube-play'></i>  Demo</button>
+            <button className='code-link' onClick={()=>window.open(props.project.code_url)}><i class="fa fa-github"></i>  Code</button>
             </div>
           </div>
         </div>
