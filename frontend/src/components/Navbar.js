@@ -118,7 +118,7 @@ function init() {
 // 314455
   return (
     <div className={classes.root}>
-      <AppBar position="fixed" style={{backgroundColor: '#022140'}}>
+      <AppBar position="fixed" style={{backgroundColor: '#091921'}}>
         <Toolbar className="navbar">
         <div className='acard cmiddle'>
           <Avatar alt="Remy Sharp" src="/profile.jpg" id='avatar-front'/>
