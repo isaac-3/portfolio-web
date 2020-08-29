@@ -21,7 +21,7 @@ const Projects = () => {
     return (
         <div style={{textAlign: 'center'}} id="projects">
             <div className='proj-header'>
-                <h1>My Projects</h1>
+                <h1>PROJECTS</h1>
             </div>
             <div className='proj-cont'>
             {projects.projects.map(project=>(

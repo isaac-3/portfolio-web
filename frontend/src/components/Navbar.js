@@ -2,14 +2,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import { red } from '@material-ui/core/colors';
 import { Link, animateScroll as scroll } from "react-scroll";
 import Avatar from '@material-ui/core/Avatar';
-import { deepOrange, deepPurple } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,9 +22,8 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(7),
   },
   orange: {
-    color: '#babecc',
+    color: 'black',
     backgroundColor: '#091921',
-    // backgroundColor: 'red',
   }
 }));
 
@@ -121,17 +115,13 @@ function init() {
       <AppBar position="fixed" style={{backgroundColor: '#091921'}}>
         <Toolbar className="navbar">
         <div className='acard cmiddle'>
-          <Avatar alt="Remy Sharp" src="/profile.jpg" id='avatar-front'/>
+          <Avatar className={classes.orange} id='avatar-front'>IC</Avatar>
           <Avatar className={classes.orange} id='avatar-back'><i class="fa fa-code" id='dev-back'></i></Avatar>
         </div>
-          {/* <Typography variant="h6" className={classes.title} className='name-title'> */}
-            {/* <span className='txt-type' data-wait="3000" data-words='["Isaac Chavez"]'></span> */}
-          {/* </Typography> */}
             <div className='nav-links'>
               <li>
             <Link
             activeClass="active"
-            // className='nav-links'
             to="about"
             spy={true}
             smooth={true}
@@ -145,7 +135,6 @@ function init() {
             <li>
             <Link
             activeClass="active"
-            // className='nav-links'
             to="projects"
             spy={true}
             smooth={true}
@@ -197,9 +186,6 @@ function init() {
             </Link>
             </li>
             </div>
-            {/* <IconButton edge="start" className='burger' color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton> */}
         <div className='burger' onClick={() => navSlide()}>
           <div className='line1'></div>
           <div className='line2'></div>

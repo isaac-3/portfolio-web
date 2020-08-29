@@ -1,7 +1,4 @@
 import React from 'react';
-import MailOutlineOutlinedIcon from '@material-ui/icons/MailOutlineOutlined';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
 
 const Contact = () => {
     return (
