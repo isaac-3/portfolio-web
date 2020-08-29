@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Switch} from 'react-router-dom'
 import { Route } from 'react-router'
@@ -18,14 +17,14 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
   return (
-    <div style={{backgroundColor: '#ebecf0'}}>
+    <div className='app-cont'>
       <Navbar/>
       <div className='paralax top-para'>
       </div>
       <About/>
       <div className='paralax'></div>
       <Projects/>
-      <Blogs/>
+      {/* <Blogs/> */}
       <div className='paralax'></div>
       <Skills/>
       <div className='paralax'></div>
@@ -43,8 +42,3 @@ function App() {
 }
 
 export default App;
-
-
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header> */}

@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState, useEffect} from 'react'
 import ProjCard from './ProjCard'
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 const Projects = () => {
 
@@ -14,12 +15,12 @@ const Projects = () => {
         ))
     },[])
 
-    if (projects == undefined){
-        return <h1>loading</h1>
+    if (projects === undefined){
+        return <CircularProgress />
     }
 
     return (
-        <div style={{textAlign: 'center'}} id="projects">
+        <div className='all-projects' id="projects">
             <div className='proj-header'>
                 <h1>PROJECTS</h1>
             </div>

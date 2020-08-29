@@ -11,7 +11,7 @@ export default function ProjCard(props) {
 
   return (
     <div className='proj-card' onClick={(e) => projSlide(e)}>
-      <img className='proj-img' src={projimg} height='200px' width='200px'/>
+      <img className='proj-img' alt='project-cover' src={projimg} height='200px' width='200px'/>
       <div className='text1'>
         <div className='proj-content'>
         <strong><small className='proj-title'>{props.project.name}</small></strong>
@@ -24,8 +24,8 @@ export default function ProjCard(props) {
           </div>
         </div>
       </div>
-      <div style={{display: 'flex'}}>
-      <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+      <div className='chevron-cont'>
+        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
       </div>
  
     </div>

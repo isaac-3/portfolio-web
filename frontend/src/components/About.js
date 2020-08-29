@@ -65,10 +65,10 @@ const About = () => {
         new TypeWriter(txtElement, words, wait);
       }
     return (
-        <div style={{textAlign: 'center', backgroundColor: 'inherit'}} id="about">
+        <div className='all-about' id="about">
               <div className='about-me-cont'>
                   <div className='about-me-name'>
-                      <img src='/croppro.jpg' style={{height: '150px', borderRadius: '50%'}}/>
+                      <img alt='profile-pic' src='/croppro.jpg' />
                       <h1>hi my name is isaac chavez and i am a . . .</h1>
                       <span className='txt-type' data-wait="3000" data-words='["Software Developer", "Lifelong Learner", "Problem Solver"]'></span>
                   </div>

@@ -9,8 +9,8 @@ const Footer = () => {
                 <i class="fa fa-linkedin-square" id='footer-linkedin' onClick={()=>window.open("https://www.linkedin.com/in/isaac-c0/")}></i>
                 <i className='fa fa-youtube-play' id='footer-yt' onClick={()=>window.open("https://www.youtube.com/channel/UCRGTXv0C5Dn_u7QFid-PYqg?view_as=subscriber")}></i>
             </div>
-            <div>
-                <h4 style={{color:'white'}}>Isaac Chavez © 2020</h4>
+            <div className='footer-name'>
+                <h4>Isaac Chavez © 2020</h4>
             </div>
             
         </div>

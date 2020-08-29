@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link} from "react-scroll";
 import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles((theme) => ({
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(7),
   },
   orange: {
-    color: 'black',
+    color: '#babecc',
     backgroundColor: '#091921',
   }
 }));
@@ -112,7 +112,7 @@ function init() {
 // 314455
   return (
     <div className={classes.root}>
-      <AppBar position="fixed" style={{backgroundColor: '#091921'}}>
+      <AppBar position="fixed" id='app-bar'>
         <Toolbar className="navbar">
         <div className='acard cmiddle'>
           <Avatar className={classes.orange} id='avatar-front'>IC</Avatar>
@@ -154,7 +154,7 @@ function init() {
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button disableRipple='true' className='nav-btns' style={{color: '#babecc'}}>
+                <Button disableRipple='true' className='nav-btns'>
                 Blogs
                 </Button>
             </Link>
