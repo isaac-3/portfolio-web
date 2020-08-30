@@ -27,10 +27,12 @@ const Contact = () => {
                 <div className="form-title">
                     <h1>Get In Touch</h1>
                 </div>
-                <label className='label'>Name</label><input className='input' type='text' placeholder="First Last" name="name"/><br/><br/>
-                <label className='label'>Email</label><input className='input' type='text' placeholder="ex@example.com" name="email"/><br/><br/>
-                <label className='label'>Message</label><textarea className='input' id='message-box' type='text' placeholder="Enter Message" name="message"/><br/><br/>
-                <button className="red" type="button">Send</button>
+                <form method="POST" data-netlify="true">
+                    <label className='label'>Name</label><input className='input' type='text' placeholder="First Last" name="name"/><br/><br/>
+                    <label className='label'>Email</label><input className='input' type='text' placeholder="ex@example.com" name="email"/><br/><br/>
+                    <label className='label'>Message</label><textarea className='input' id='message-box' type='text' placeholder="Enter Message" name="message"/><br/><br/>
+                    <button className="red" type="submit">Send</button>
+                </form>
             </div>
         </div>
     );
