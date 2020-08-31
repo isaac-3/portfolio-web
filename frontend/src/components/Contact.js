@@ -27,7 +27,7 @@ const Contact = () => {
                 <div className="form-title">
                     <h1>Get In Touch</h1>
                 </div>
-                <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+                <form name="contact" netlify method="POST" data-netlify="true">
                     <label className='label'>Name</label><input className='input' type='text' placeholder="First Last" name="name"/><br/><br/>
                     <label className='label'>Email</label><input className='input' type='email' placeholder="ex@example.com" name="email"/><br/><br/>
                     <label className='label'>Message</label><textarea className='input' id='message-box' type='text' placeholder="Enter Message" name="message"/><br/><br/>
