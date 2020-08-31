@@ -7,7 +7,7 @@ const Contact = () => {
                 <h1>CONTACT</h1>
                 <div className="contact-icon-email">
                     <i class="fa fa-envelope-o" id='email-icon' onClick={()=>window.open("mailto:isaacgc0596@gmail.com?subject=Hello!")}></i>
-                    <span >isaacgc0596@gmail.com</span><br/>
+                    <span >isaacgc0596@gmail.com </span><br/>
                 </div>
                 <div className="contact-icon-phone">
                     <i class="fa fa-phone" id="phone-icon" onClick={()=> window.open('tel:2819355556')}></i>
