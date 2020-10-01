@@ -75,11 +75,11 @@ const About = () => {
                       <h3>
                       Since I began my journey as a software engineer, 
                       I have been captivated by everything about it. 
-                      Working with and learning new technologies excites me 
-                      and gives me new ideas and perspectives on various solutions. 
+                      Working with and learning new technologies Intrigues me 
+                      and gives me new ideas and perspectives to various solutions. 
                       As a developer, you learn that there is more to programming than just coding, 
                       it's an opportunity to help and improve the world around us. 
-                      Knowing that software development is continuous, I am excited to 
+                      Knowing that software development is a never-ending road of learning, I am excited to 
                       see what it may and will evolve to.
                       </h3>
                   </div>

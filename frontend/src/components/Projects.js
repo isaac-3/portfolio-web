@@ -20,6 +20,40 @@ const Projects = () => {
                 <ProjCard project={project}/>
             ))}  */}
                 <div className='proj-card' onClick={(e) => projSlide(e)}>
+                    <img className='proj-img' alt='project-cover' src='/chatter.png' height='200px' width='200px'/>
+                    <div className='text1'>
+                        <div className='proj-content'>
+                        <strong><small className='proj-title'>Chatter</small></strong>
+                        <div className='proj-text'>
+                        Users are able to search and join/leave rooms, create rooms, view members/online, send/edit/delete messages <br/><span className="realtime">real time</span>
+                            <div className='proj-btns'>
+                            <button className='code-link c-link1' onClick={()=>window.open('https://github.com/isaac-3/chat-app')}><i class="fa fa-github"></i>  Code</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div className='chevron-cont'>
+                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+                    </div>
+                </div>
+                <div className='proj-card' onClick={(e) => projSlide(e)}>
+                    <img className='proj-img' alt='project-cover' src='/bestpics.png' height='200px' width='200px'/>
+                    <div className='text1'>
+                        <div className='proj-content'>
+                        <strong><small className='proj-title'>BEST PICS</small></strong>
+                        <div className='proj-text'>
+                        App where users are able to share their favorite pics, follow/unfollow friends, leave comments and edit their profile!
+                            <div className='proj-btns'>
+                            <button className='code-link c-link1' onClick={()=>window.open("https://github.com/isaac-3/nodeproject")}><i class="fa fa-github"></i>  Code</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div className='chevron-cont'>
+                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+                    </div>
+                </div>
+                <div className='proj-card' onClick={(e) => projSlide(e)}>
                     <img className='proj-img' alt='project-cover' src='/takeatrip.png' height='200px' width='200px'/>
                     <div className='text1'>
                         <div className='proj-content'>

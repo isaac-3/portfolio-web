@@ -1,5 +1,5 @@
 .app-cont{
-  background-color: #ebecf0;
+  background-color: #f0f0f0;
 }
 
 .all-about{
@@ -62,8 +62,8 @@
               inset 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 .navbar li> .active .nav-btns{
-  color: #05b7f2;
-  text-shadow: 0 0 4px #05b7f2;
+  color: #0281e8;
+  text-shadow: 0 0 2px #0281e8;
 }
 
 .navbar .nav-btns{
@@ -101,9 +101,9 @@
   transition: all 0.3s ease;
 }
 @media screen and (min-width: 768px){
-  #projects{
+  /* #projects{
     height: 100vh;
-  }
+  } */
   #contact{
     height: 100vh;
   }
@@ -279,7 +279,7 @@
   text-align: center;
   appearance:none;
   -webkit-appearance:none;
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .red, input{
@@ -319,7 +319,7 @@
 }
 
 .red{
-  color: #05b7f2;
+  color: #0281e8;
   font-family: 'Advent Pro', sans-serif;
   font-weight: bold;
   box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
@@ -436,13 +436,23 @@
   height: 470px;
 }
 .proj-img{
+  border-radius: 10px;
   margin-top: 10px;
   transform: translateY(10px);
   transition: transform 1000ms;
 }
 
+.proj-img{
+  width: 100%;
+}
+
 .proj-card.expanded .proj-img {
   transform: translateY(0);
+}
+
+.proj-img:hover {
+  transform: scale(1.1);
+  /* border-radius: 10px; */
 }
 
 .text1 {
@@ -490,6 +500,10 @@
   padding: 0 10px;
 }
 
+.realtime{
+  font-weight: bold;
+}
+
 .proj-btns{
   display: flex;
   flex-wrap: wrap;
@@ -499,6 +513,11 @@
   font-weight: 900;
   flex-grow: 1;
 }
+
+.c-link1{
+  flex-grow: 0;
+}
+
 @keyframes sheen {
   0% {
     transform: skewY(-45deg) translateX(0);
@@ -565,6 +584,12 @@
   transform: skewX(-45deg) translateX(0);
   transition: none;
 }
+
+.c-link1{
+  max-width: 120px;
+  margin-left: 70px;
+}
+
 .code-link:hover {
   background-color: #211F1F;
   color: #fff;
@@ -636,29 +661,29 @@
 }
 
 #footer-github:hover{
-  color: #05b7f2;
-  border: 3px solid #05b7f2;
-  box-shadow: 0 0 15px #05b7f2;
+  color: #0281e8;
+  border: 3px solid #0281e8;
+  box-shadow: 0 0 15px #0281e8;
   transition: all 0.5s ease;
 }
 #footer-yt:hover{
-  color: #05b7f2;
-  border: 3px solid #05b7f2;
-  box-shadow: 0 0 15px #05b7f2;
+  color: #0281e8;
+  border: 3px solid #0281e8;
+  box-shadow: 0 0 15px #0281e8;
   transition: all 0.5s ease;
 }
 #footer-linkedin:hover{
-  color: #05b7f2;
-  border: 3px solid #05b7f2;
-  box-shadow: 0 0 15px #05b7f2;
+  color: #0281e8;
+  border: 3px solid #0281e8;
+  box-shadow: 0 0 15px #0281e8;
   transition: all 0.5s ease;
 }
 
 .footer-medium:hover{
-  fill: #05b7f2;
-  color: #05b7f2;
-  border: 3px solid #05b7f2;
-  box-shadow: 0 0 15px #05b7f2;
+  fill: #0281e8;
+  color: #0281e8;
+  border: 3px solid #0281e8;
+  box-shadow: 0 0 15px #0281e8;
   transition: all 0.5s ease;
 }
 
@@ -818,4 +843,8 @@
   40%, 100% {
     transform: translateY(0px);
   }
+}
+
+.vscode_i{
+  color: #0078d7;
 }
