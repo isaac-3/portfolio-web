@@ -49,6 +49,8 @@
 }
 
 .navbar li> .active {
+  /* border-bottom:  1px solid ghostwhite;
+  border-top:  1px solid ghostwhite; */
   content: '';
   top: 50%;
   left: 50%;
@@ -62,14 +64,14 @@
               inset 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 .navbar li> .active .nav-btns{
-  color: #0281e8;
-  text-shadow: 0 0 2px #0281e8;
+  color: blanchedalmond;
+  text-shadow: 0 0 2px blanchedalmond;
 }
 
 .navbar .nav-btns{
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
-  color: #babecc;
+  color: whitesmoke;
 }
 
 .nav-links{
@@ -319,13 +321,12 @@
 }
 
 .red{
-  color: #0281e8;
-  font-family: 'Advent Pro', sans-serif;
+  color: burlywood;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  font-weight: 600;
   width: 50%;
 }
 
@@ -339,14 +340,14 @@
 
 #email-icon, #linkedin-icon, #phone-icon, #resume{
   cursor: pointer;
-  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 10px #babecc;
   transition: all 0.2s ease-in-out;
   background-color: transparent;
   border-radius: 50%;
-  padding: 4px;
+  padding: 8px;
 }
 #email-icon:hover, #linkedin-icon:hover, #phone-icon:hover, #resume:hover{
-  box-shadow: -2px -2px 5px #babecc, 2px 2px 5px #babecc;
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
 }
 #email-icon:hover{
   color: #D44638;
@@ -357,8 +358,9 @@
   margin-bottom: 24px;
 }
 .contact-links i{
-  margin-top: 4px;
+  margin-top: 8px;
   font-size: 32px;
+  padding: 8px;
 }
 .contact-links span, a{
   font-family: 'Poppins', sans-serif;
@@ -370,9 +372,7 @@
 .contact-icon-email:hover span{
   text-decoration: underline #D44638 ;
 }
-/* .contact-icon-email span{
 
-} */
 #linkedin-icon:hover{
   color: #0e76a8;
 }
@@ -386,17 +386,19 @@
 .contact-icon-phone:hover span{
   text-decoration: underline green ;
 }
-.resume-section a{
+.resume-section span{
   color: black;
   margin-left: 16px;
+  text-decoration: none;
 }
 #resume{
   font-size: 28px;
+  text-decoration: none;
 }
 #resume:hover{
   color: #ED2224; 
 }
-.resume-section:hover a{
+.resume-section:hover span{
   text-decoration: underline #ED2224 ;
 }
 
@@ -472,6 +474,7 @@
 .proj-card.expanded .proj-content {
   transform: translateY(0px);
 }
+
 .chevron-cont{
   display: flex;
 }
@@ -483,6 +486,61 @@
   transform: rotate(180deg);
   transition: transform 1000ms;
 }
+.tools_cont{
+  display: flex;
+  font-size: 12px;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 40px;
+  width: 260px;
+  color: #022140;
+}
+
+.tools_cont div{
+  border-bottom: 1px solid #022140;
+  /* border-radius: 10px; */
+  padding: 2px;
+}
+
+.tooltip {
+  display: inline;
+  position: relative;
+}
+
+.tooltip:hover:after {
+  background: #111;
+  background: rgba(0, 0, 0, .8);
+  border-radius: .5em;
+  bottom: -3.15em;
+  color: #fff;
+  content: attr(title);
+  display: block;
+  left: -1em;
+  padding: .3em 1em;
+  position: absolute;
+  text-shadow: 0 1px 0 #000;
+  z-index: 98;
+}
+
+/* .t1{
+  position: absolute;
+  bottom: 40px;
+}
+.t2{
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+}
+.t3{
+  position: absolute;
+  bottom: 40px;
+  left: 160px;
+}
+.t4{
+  position: absolute;
+  bottom: 40px;
+  left: 220px;
+} */
 
 .proj-card.expanded .chevron {
   transform: rotate(0deg);
@@ -587,7 +645,8 @@
 
 .c-link1{
   max-width: 120px;
-  margin-left: 70px;
+  margin-left: 60px;
+  margin-top: 2px;
 }
 
 .code-link:hover {
@@ -638,7 +697,7 @@
   justify-content: space-around;
 }
 .footer-sec i{
-  margin: 16px 4px 0 4px;
+  margin: 16px 10px 0 10px;
   width: 32px;
   height: 32px;
   line-height: 32px;
@@ -651,7 +710,7 @@
   transition: all 0.5s ease;
 }
 .footer-sec svg{
-  margin: 16px 4px 4px 4px;
+  margin: 16px 10px 4px 10px;
   height: 24px;
   cursor: pointer;
   border-radius: 50%;
@@ -661,29 +720,29 @@
 }
 
 #footer-github:hover{
-  color: #0281e8;
-  border: 3px solid #0281e8;
-  box-shadow: 0 0 15px #0281e8;
+  color: blanchedalmond;
+  border: 3px solid blanchedalmond;
+  box-shadow: 0 0 15px blanchedalmond;
   transition: all 0.5s ease;
 }
 #footer-yt:hover{
-  color: #0281e8;
-  border: 3px solid #0281e8;
-  box-shadow: 0 0 15px #0281e8;
+  color: blanchedalmond;
+  border: 3px solid blanchedalmond;
+  box-shadow: 0 0 15px blanchedalmond;
   transition: all 0.5s ease;
 }
 #footer-linkedin:hover{
-  color: #0281e8;
-  border: 3px solid #0281e8;
-  box-shadow: 0 0 15px #0281e8;
+  color: blanchedalmond;
+  border: 3px solid blanchedalmond;
+  box-shadow: 0 0 15px blanchedalmond;
   transition: all 0.5s ease;
 }
 
 .footer-medium:hover{
-  fill: #0281e8;
-  color: #0281e8;
-  border: 3px solid #0281e8;
-  box-shadow: 0 0 15px #0281e8;
+  fill: blanchedalmond;
+  color: blanchedalmond;
+  border: 3px solid blanchedalmond;
+  box-shadow: 0 0 15px blanchedalmond;
   transition: all 0.5s ease;
 }
 

@@ -20,6 +20,27 @@ const Projects = () => {
                 <ProjCard project={project}/>
             ))}  */}
                 <div className='proj-card' onClick={(e) => projSlide(e)}>
+                    <img className='proj-img' alt='project-cover' src='/weatherapp.png' height='200px' width='200px'/>
+                    <div className='text1'>
+                        <div className='proj-content'>
+                        <strong><small className='proj-title'>Weather App</small></strong>
+                        <div className='proj-text'>
+                        Check current weather in your area or lookup up weather in a differnt city! Toggle between celsius and fahrenheit
+                            <div className='proj-btns'>
+                            <button className='code-link c-link1' onClick={()=>window.open('https://github.com/isaac-3/weatherapp-react-native')}><i class="fa fa-github"></i>  Code</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div className='chevron-cont'>
+                        <div className="tools_cont">
+                            <div className="t3">REACT NATIVE</div>
+                            <div className="tooltip" title="OpenWeatherApi" >API'S</div>
+                        </div>
+                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+                    </div>
+                </div>
+                <div className='proj-card' onClick={(e) => projSlide(e)}>
                     <img className='proj-img' alt='project-cover' src='/chatter.png' height='200px' width='200px'/>
                     <div className='text1'>
                         <div className='proj-content'>
@@ -33,6 +54,12 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className='chevron-cont'>
+                        <div className="tools_cont">
+                            <div className="t1">MONGODB</div>
+                            <div className="t2">EXPRESS</div>
+                            <div className="t3">REACT</div>
+                            <div className="t4">NODEJS</div>
+                        </div>
                         <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
                     </div>
                 </div>
@@ -40,16 +67,22 @@ const Projects = () => {
                     <img className='proj-img' alt='project-cover' src='/bestpics.png' height='200px' width='200px'/>
                     <div className='text1'>
                         <div className='proj-content'>
-                        <strong><small className='proj-title'>BEST PICS</small></strong>
-                        <div className='proj-text'>
-                        App where users are able to share their favorite pics, follow/unfollow friends, leave comments and edit their profile!
-                            <div className='proj-btns'>
-                            <button className='code-link c-link1' onClick={()=>window.open("https://github.com/isaac-3/nodeproject")}><i class="fa fa-github"></i>  Code</button>
+                            <strong><small className='proj-title'>BEST PICS</small></strong>
+                            <div className='proj-text'>
+                            App where users are able to share their favorite pics, follow/unfollow friends, leave comments and edit their profile!
+                                <div className='proj-btns'>
+                                    <button className='code-link c-link1' onClick={()=>window.open("https://github.com/isaac-3/nodeproject")}><i class="fa fa-github"></i>  Code</button>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                     <div className='chevron-cont'>
+                        <div className="tools_cont">
+                            <div className="t1">MONGODB</div>
+                            <div className="t2">EXPRESS</div>
+                            <div className="t3">REACT</div>
+                            <div className="t4">NODEJS</div>
+                        </div>
                         <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
                     </div>
                 </div>
@@ -68,6 +101,12 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className='chevron-cont'>
+                        <div className="tools_cont">
+                            <div className="t1">REACT</div>
+                            <div className="t2">REDUX</div>
+                            <div className="t2">RAILS</div>
+                            <div className="tooltip" title="TripadviserApi WeatherApi" >API'S</div>
+                        </div>
                         <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
                     </div>
                 </div>
@@ -86,6 +125,11 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className='chevron-cont'>
+                        <div className="tools_cont">
+                            <div className="t1">REACT</div>
+                            <div className="t2">RAILS</div>
+                            <div className="tooltip" title="TargetApi GoogleApi" >API'S</div>
+                        </div>
                         <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
                     </div>
                 </div>
@@ -104,6 +148,11 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className='chevron-cont'>
+                        <div className="tools_cont">
+                            <div className="t1">VANILLA JS</div>
+                            <div className="t2">RAILS</div>
+                            <div className="t2">CSS/HTML</div>
+                        </div>
                         <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
                     </div>
                 </div>

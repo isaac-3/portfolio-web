@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(7),
   },
   orange: {
-    color: '#babecc',
+    color: 'whitesmoke',
     backgroundColor: '#091921',
   }
 }));
