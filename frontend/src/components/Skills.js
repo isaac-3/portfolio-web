@@ -23,6 +23,7 @@ const Skills = () => {
                 <i class="devicon-nodejs-plain-wordmark colored"></i>
                 <i class="devicon-html5-plain-wordmark colored" data-speed='2'></i>
                 <i class="devicon-css3-plain-wordmark colored" data-speed='6'></i>
+                <i class="devicon-sass-original colored"></i>
                 <i class="devicon-ruby-plain-wordmark colored" data-speed='8'></i>
                 <i class="devicon-rails-plain-wordmark colored" data-speed='-2'></i>
                 <i class="devicon-mongodb-plain-wordmark colored"></i>

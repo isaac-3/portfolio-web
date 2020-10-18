@@ -9,7 +9,7 @@ const openPDF = () => {
         <head>
           <title>${title}</title>
         </head>
-        <body style="margin:0">
+        <body style="margin:0px">
           <embed width="100%" height="100%" src="/resume.pdf" type="application/pdf">
         </body>
       </html>

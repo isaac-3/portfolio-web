@@ -352,6 +352,7 @@
 #email-icon:hover{
   color: #D44638;
 }
+
 .contact-links{
   text-align: left;
   padding-top: 72px;
@@ -498,8 +499,13 @@
 
 .tools_cont div{
   border-bottom: 1px solid #022140;
-  /* border-radius: 10px; */
   padding: 2px;
+}
+
+.more_tools{
+  /* font-size: 8px; */
+  bottom: 36px;
+  flex-wrap: wrap;
 }
 
 .tooltip {
@@ -521,6 +527,22 @@
   text-shadow: 0 1px 0 #000;
   z-index: 98;
 }
+
+.tooltip_1:hover:after {
+  background: #111;
+  background: rgba(0, 0, 0, .8);
+  border-radius: .5em;
+  bottom: -1.90em;
+  color: #fff;
+  content: attr(title);
+  display: block;
+  left: -1em;
+  padding: .3em 1em;
+  position: absolute;
+  text-shadow: 0 1px 0 #000;
+  z-index: 98;
+}
+
 
 /* .t1{
   position: absolute;
@@ -756,6 +778,24 @@
   font-family: 'Poppins', sans-serif;
 }
 
+@keyframes rotate{
+  0%{
+      transform: rotate(0deg) translate3d(0,0,0);
+  }
+  25%{
+      transform: rotate(3deg) translate3d(0,0,0);
+  }
+  50%{
+      transform: rotate(-3deg) translate3d(0,0,0);
+  }
+  75%{
+      transform: rotate(1deg) translate3d(0,0,0);
+  }
+  100%{
+      transform: rotate(0deg) translate3d(0,0,0);
+  }
+}
+
 .skill-box{
   display: flex;
   flex-wrap: wrap;
@@ -787,18 +827,21 @@
   -webkit-filter: drop-shadow(2px 2px 5px #545453);
   -moz-filter: drop-shadow(2px 2px 5px #545453);
   filter: drop-shadow(2px 2px 5px #545453);
+  animation: rotate 0.7s ease-in-out both;
 }
 
 .skill-box img:hover{
   -webkit-filter: drop-shadow(2px 2px 5px #545453);
   -moz-filter: drop-shadow(2px 2px 5px #545453);
   filter: drop-shadow(2px 2px 5px #545453);
+  animation: rotate 0.7s ease-in-out both;
 }
 
 .skill-box i:hover{
   -webkit-filter: drop-shadow(2px 2px 5px #545453);
   -moz-filter: drop-shadow(2px 2px 5px #545453);
   filter: drop-shadow(2px 2px 5px #545453);
+    animation: rotate 0.7s ease-in-out both;
 }
 
 .svg-redux:hover .redux-icon{

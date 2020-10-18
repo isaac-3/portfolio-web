@@ -16,9 +16,30 @@ const Projects = () => {
                 <h1>PROJECTS</h1>
             </div>
             <div className='proj-cont'>
-            {/* {projects.projects.map(project=>(
-                <ProjCard project={project}/>
-            ))}  */}
+                <div className='proj-card' onClick={(e) => projSlide(e)}>
+                    <img className='proj-img' alt='project-cover' src='/digitaldiner.png' height='200px' width='200px'/>
+                    <div className='text1'>
+                        <div className='proj-content'>
+                        <strong><small className='proj-title'>The Digital Diner</small></strong>
+                        <div className='proj-text'>
+                        Search recipes by name and category, like and save recipes you enjoy, and create your own recipes to share with the world!
+                            <div className='proj-btns'>
+                            <button className='code-link c-link1' onClick={()=>window.open('https://github.com/isaac-3/food-app')}><i class="fa fa-github"></i>  Code</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div className='chevron-cont'>
+                        <div className="tools_cont more_tools">
+                            <div className="t1">MONGODB</div>
+                            <div className="t2">EXPRESS</div>
+                            <div className="t3">REACT/REDUX</div>
+                            <div className="t4">NODEJS</div>
+                            <div className="tooltip tooltip_1" title="TheMealDB" >API'S</div>
+                        </div>
+                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+                    </div>
+                </div>
                 <div className='proj-card' onClick={(e) => projSlide(e)}>
                     <img className='proj-img' alt='project-cover' src='/weatherapp.png' height='200px' width='200px'/>
                     <div className='text1'>
@@ -35,7 +56,7 @@ const Projects = () => {
                     <div className='chevron-cont'>
                         <div className="tools_cont">
                             <div className="t3">REACT NATIVE</div>
-                            <div className="tooltip" title="OpenWeatherApi" >API'S</div>
+                            <div className="tooltip tooltip_1" title="OpenWeatherApi" >API'S</div>
                         </div>
                         <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
                     </div>
