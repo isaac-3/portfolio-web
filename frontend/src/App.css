@@ -811,45 +811,11 @@
   font-size: 100px;
 }
 
-.skill-box svg{
-  margin-bottom: 48px;
-  flex: 0 0 25%;
-  width: 100px;
-  height: 100px;
-}
-
-.skill-box img{
-  margin-bottom: 48px;
-  flex: 0 0 25%;
-  height: 100px;
-}
-.skill-box svg:hover{
-  -webkit-filter: drop-shadow(2px 2px 5px #545453);
-  -moz-filter: drop-shadow(2px 2px 5px #545453);
-  filter: drop-shadow(2px 2px 5px #545453);
-  animation: rotate 0.7s ease-in-out both;
-}
-
-.skill-box img:hover{
-  -webkit-filter: drop-shadow(2px 2px 5px #545453);
-  -moz-filter: drop-shadow(2px 2px 5px #545453);
-  filter: drop-shadow(2px 2px 5px #545453);
-  animation: rotate 0.7s ease-in-out both;
-}
-
 .skill-box i:hover{
   -webkit-filter: drop-shadow(2px 2px 5px #545453);
   -moz-filter: drop-shadow(2px 2px 5px #545453);
   filter: drop-shadow(2px 2px 5px #545453);
     animation: rotate 0.7s ease-in-out both;
-}
-
-.svg-redux:hover .redux-icon{
-  fill: #764abc;
-}
-
-.svg-sql:hover .sql-icon{
-  fill: black;
 }
 
 .about-me-cont{
