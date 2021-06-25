@@ -70,7 +70,7 @@ const About = () => {
                       <h1>hi my name is isaac chavez and i am a . . .</h1>
                       <span className='txt-type' data-wait="3000" data-words='["Software Developer", "Lifelong Learner", "Problem Solver"]'></span>
                   </div>
-                  <div class="vl"></div>
+                  <div className="vl"></div>
                   <div className='about-me-read'>
                       <h3>
                       Since I began my journey as a software engineer, 

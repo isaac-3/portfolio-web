@@ -19,13 +19,13 @@ export default function ProjCard(props) {
             {props.project.description}
             <div className='proj-btns'>
             <button className='demo-link' onClick={()=>window.open(props.project.project_url)}><i className='fa fa-youtube-play'></i>  Demo</button>
-            <button className='code-link' onClick={()=>window.open(props.project.code_url)}><i class="fa fa-github"></i>  Code</button>
+            <button className='code-link' onClick={()=>window.open(props.project.code_url)}><i className="fa fa-github"></i>  Code</button>
             </div>
           </div>
         </div>
       </div>
       <div className='chevron-cont'>
-        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" strokeWidth="5"/></svg>
       </div>
  
     </div>

@@ -24,7 +24,7 @@ const Projects = () => {
                         <div className='proj-text'>
                         Search recipes by name and category, like and save recipes you enjoy, and create your own recipes to share with the world!
                             <div className='proj-btns'>
-                            <button className='code-link c-link1' onClick={()=>window.open('https://github.com/isaac-3/food-app')}><i class="fa fa-github"></i>  Code</button>
+                            <button className='code-link c-link1' onClick={()=>window.open('https://github.com/isaac-3/food-app')}><i className="fa fa-github"></i>  Code</button>
                             </div>
                         </div>
                         </div>
@@ -37,7 +37,7 @@ const Projects = () => {
                             <div className="t4">NODEJS</div>
                             <div className="tooltip tooltip_1" title="TheMealDB" >API'S</div>
                         </div>
-                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" strokeWidth="5"/></svg>
                     </div>
                 </div>
                 <div className='proj-card' onClick={(e) => projSlide(e)}>
@@ -48,7 +48,7 @@ const Projects = () => {
                         <div className='proj-text'>
                         Check current weather in your area or lookup up weather in a differnt city! Toggle between celsius and fahrenheit
                             <div className='proj-btns'>
-                            <button className='code-link c-link1' onClick={()=>window.open('https://github.com/isaac-3/weatherapp-react-native')}><i class="fa fa-github"></i>  Code</button>
+                            <button className='code-link c-link1' onClick={()=>window.open('https://github.com/isaac-3/weatherapp-react-native')}><i className="fa fa-github"></i>  Code</button>
                             </div>
                         </div>
                         </div>
@@ -58,7 +58,7 @@ const Projects = () => {
                             <div className="t3">REACT NATIVE</div>
                             <div className="tooltip tooltip_1" title="OpenWeatherApi" >API'S</div>
                         </div>
-                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" strokeWidth="5"/></svg>
                     </div>
                 </div>
                 <div className='proj-card' onClick={(e) => projSlide(e)}>
@@ -69,7 +69,7 @@ const Projects = () => {
                         <div className='proj-text'>
                         Users are able to search and join/leave rooms, create rooms, view members/online, send/edit/delete messages <br/><span className="realtime">real time</span>
                             <div className='proj-btns'>
-                            <button className='code-link c-link1' onClick={()=>window.open('https://github.com/isaac-3/chat-app')}><i class="fa fa-github"></i>  Code</button>
+                            <button className='code-link c-link1' onClick={()=>window.open('https://github.com/isaac-3/chat-app')}><i className="fa fa-github"></i>  Code</button>
                             </div>
                         </div>
                         </div>
@@ -81,7 +81,7 @@ const Projects = () => {
                             <div className="t3">REACT</div>
                             <div className="t4">NODEJS</div>
                         </div>
-                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" strokeWidth="5"/></svg>
                     </div>
                 </div>
                 <div className='proj-card' onClick={(e) => projSlide(e)}>
@@ -92,7 +92,7 @@ const Projects = () => {
                             <div className='proj-text'>
                             App where users are able to share their favorite pics, follow/unfollow friends, leave comments and edit their profile!
                                 <div className='proj-btns'>
-                                    <button className='code-link c-link1' onClick={()=>window.open("https://github.com/isaac-3/nodeproject")}><i class="fa fa-github"></i>  Code</button>
+                                    <button className='code-link c-link1' onClick={()=>window.open("https://github.com/isaac-3/nodeproject")}><i className="fa fa-github"></i>  Code</button>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +104,7 @@ const Projects = () => {
                             <div className="t3">REACT</div>
                             <div className="t4">NODEJS</div>
                         </div>
-                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" strokeWidth="5"/></svg>
                     </div>
                 </div>
                 <div className='proj-card' onClick={(e) => projSlide(e)}>
@@ -116,7 +116,7 @@ const Projects = () => {
                         Users are able to plan trips out by searching for various things to do around their location, and may also add other users to join in on the trip to plan out more ideas
                             <div className='proj-btns'>
                             <button className='demo-link' onClick={()=>window.open('https://www.youtube.com/watch?v=adlCActjmRc&feature=youtu.be')}><i className='fa fa-youtube-play'></i>  Demo</button>
-                            <button className='code-link' onClick={()=>window.open('https://github.com/isaac-3/final-project')}><i class="fa fa-github"></i>  Code</button>
+                            <button className='code-link' onClick={()=>window.open('https://github.com/isaac-3/final-project')}><i className="fa fa-github"></i>  Code</button>
                             </div>
                         </div>
                         </div>
@@ -128,7 +128,7 @@ const Projects = () => {
                             <div className="t2">RAILS</div>
                             <div className="tooltip" title="TripadviserApi WeatherApi" >API'S</div>
                         </div>
-                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" strokeWidth="5"/></svg>
                     </div>
                 </div>
                 <div className='proj-card' onClick={(e) => projSlide(e)}>
@@ -140,7 +140,7 @@ const Projects = () => {
                         E-commerce website where users can search by categories for various items and be able to purchase them, edit their cart and view store locations
                             <div className='proj-btns'>
                             <button className='demo-link' onClick={()=>window.open('https://www.youtube.com/watch?v=QG8HfCflFWM&feature=youtu.be')}><i className='fa fa-youtube-play'></i>  Demo</button>
-                            <button className='code-link' onClick={()=>window.open('https://github.com/isaac-3/Shop-Mod4-React-Project')}><i class="fa fa-github"></i>  Code</button>
+                            <button className='code-link' onClick={()=>window.open('https://github.com/isaac-3/Shop-Mod4-React-Project')}><i className="fa fa-github"></i>  Code</button>
                             </div>
                         </div>
                         </div>
@@ -151,7 +151,7 @@ const Projects = () => {
                             <div className="t2">RAILS</div>
                             <div className="tooltip" title="TargetApi GoogleApi" >API'S</div>
                         </div>
-                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" strokeWidth="5"/></svg>
                     </div>
                 </div>
                 <div className='proj-card' onClick={(e) => projSlide(e)}>
@@ -163,7 +163,7 @@ const Projects = () => {
                             A To-Do app where users can make an agenda and be able to plan out their days by creating and/or finishing tasks
                             <div className='proj-btns'>
                             <button className='demo-link' onClick={()=>window.open('https://www.youtube.com/watch?v=jqrZRoTbMS8')}><i className='fa fa-youtube-play'></i>  Demo</button>
-                            <button className='code-link' onClick={()=>window.open('https://github.com/bryantomoregie/Project-3-')}><i class="fa fa-github"></i>  Code</button>
+                            <button className='code-link' onClick={()=>window.open('https://github.com/bryantomoregie/Project-3-')}><i className="fa fa-github"></i>  Code</button>
                             </div>
                         </div>
                         </div>
@@ -174,7 +174,7 @@ const Projects = () => {
                             <div className="t2">RAILS</div>
                             <div className="t2">CSS/HTML</div>
                         </div>
-                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+                        <svg className="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" strokeWidth="5"/></svg>
                     </div>
                 </div>
             </div>

@@ -26,20 +26,20 @@ const Contact = () => {
             <div className='contact-links'>
                 <h1>CONTACT</h1>
                 <div className="contact-icon-email">
-                    <i class="fa fa-envelope-o" id='email-icon' onClick={()=>window.open("mailto:isaacgc0596@gmail.com?subject=Hello!")}></i>
+                    <i className="fa fa-envelope-o" id='email-icon' onClick={()=>window.open("mailto:isaacgc0596@gmail.com?subject=Hello!")}></i>
                     <span >isaacgc0596@gmail.com </span><br/>
                 </div>
                 <div className="contact-icon-phone">
-                    <i class="fa fa-phone" id="phone-icon" onClick={()=> window.open('tel:2819355556')}></i>
+                    <i className="fa fa-phone" id="phone-icon" onClick={()=> window.open('tel:2819355556')}></i>
                     <span >(281) 935-5556</span>
                 </div>
                 <div className="contact-icon-linkedin">
-                    <i class="fa fa-linkedin-square" id='linkedin-icon' onClick={()=>window.open("https://www.linkedin.com/in/isaac-c0/")}></i>
+                    <i className="fa fa-linkedin-square" id='linkedin-icon' onClick={()=>window.open("https://www.linkedin.com/in/isaac-c0/")}></i>
                     <span >Connect With Me</span><br/>
                 </div>
                 <h1>RESUME</h1>
                 <div className="resume-section">
-                    <i class="fa fa-file-o" id='resume' onClick={() => openPDF()}></i>
+                    <i className="fa fa-file-o" id='resume' onClick={() => openPDF()}></i>
                     <span>View My Resume</span>
                 </div>
             </div>

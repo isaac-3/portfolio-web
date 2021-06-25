@@ -30,7 +30,7 @@ function App() {
       <div className='paralax'></div>
       <Contact/>
       <Footer/>
-      <Fab id="back-to-top" disableRipple size='small' onClick={()=>top()}><i class="fa fa-caret-up"></i></Fab>
+      <Fab id="back-to-top" disableRipple size='small' onClick={()=>top()}><i className="fa fa-caret-up"></i></Fab>
       {/* <BrowserRouter>
         <Navbar/>
         <Switch>
