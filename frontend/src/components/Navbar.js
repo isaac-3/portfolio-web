@@ -116,7 +116,7 @@ function init() {
         <Toolbar className="navbar">
         <div className='acard cmiddle'>
           <Avatar className={classes.orange} id='avatar-front'>IC</Avatar>
-          <Avatar className={classes.orange} id='avatar-back'><i class="fa fa-code" id='dev-back'></i></Avatar>
+          <Avatar className={classes.orange} id='avatar-back'><i className="fa fa-code" id='dev-back'></i></Avatar>
         </div>
             <div className='nav-links'>
               <li>
@@ -127,7 +127,7 @@ function init() {
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button disableRipple='true' className='nav-btns'>
+                <Button disableRipple={true} className='nav-btns'>
                 About
                 </Button>
             </Link>
@@ -140,7 +140,7 @@ function init() {
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button disableRipple='true' className='nav-btns'>
+                <Button disableRipple={true} className='nav-btns'>
                 Projects
                 </Button>
             </Link>
@@ -154,7 +154,7 @@ function init() {
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button disableRipple='true' className='nav-btns'>
+                <Button disableRipple={true} className='nav-btns'>
                 Blogs
                 </Button>
             </Link>
@@ -167,7 +167,7 @@ function init() {
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button disableRipple='true' className='nav-btns'>
+                <Button disableRipple={true} className='nav-btns'>
                 Skills
                 </Button>
             </Link>
@@ -180,7 +180,7 @@ function init() {
             smooth={true}
             offset={0}
             duration= {500}>
-                <Button disableRipple='true' className='nav-btns'>
+                <Button disableRipple={true} className='nav-btns'>
                 Contact
                 </Button>
             </Link>
